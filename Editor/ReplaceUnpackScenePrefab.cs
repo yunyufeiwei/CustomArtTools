@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -93,7 +91,11 @@ public class ReplaceUnpackScenePrefab : EditorWindow
             return;  
         }  
 
-        GameObject[] gameObjects = GameObject.FindObjectsOfType<GameObject>();
+        // GameObject[] gameObjects = GameObject.FindObjectsOfType<GameObject>();
+        //FindObjectsOfType<>()已经过时，使用新的方法FindObjectsByType<>()来替换
+        FindObjectsSortMode sortMode = FindObjectsSortMode.None;
+        GameObject[] gameObjects = GameObject.FindObjectsByType<GameObject>(sortMode);
+        
         for (int i = 0; i < gameObjects.Length; i++)
         {
             //去掉名称前后的空格

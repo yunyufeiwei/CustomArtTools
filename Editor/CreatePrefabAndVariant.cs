@@ -1,10 +1,7 @@
 using UnityEditor;  
 using UnityEngine;  
-using System.Collections.Generic;
 using System.IO;
-using Spine.Unity.Editor;
 using Unity.Mathematics;
-using UnityEditor.Rendering;
 
 //批量创建Prefab及其变体，使用嵌套的方式
 public class CreatePrefabsAndVariants : EditorWindow  
@@ -258,7 +255,7 @@ public class CreatePrefabsAndVariants : EditorWindow
                     {
                         //创建变体Prefab实例，同样使用选择的模型创建prefab变体
                         GameObject emptyPrefabInstanceGo = new GameObject(selectedObject.name);  //prefab的跟名称
-                        GameObject variantPrefabInstance = Instantiate(originalPrefab,Vector3.zero,quaternion.identity); 
+                        GameObject variantPrefabInstance = Instantiate(originalPrefab,Vector3.zero , quaternion.identity); 
                         //与创建Prefab不同的是，变体里面加入的不是fbx，而是上一步中创建的原始prefab
                         PrefabUtility.ConvertToPrefabInstance(variantPrefabInstance,originalPrefab,convertToPrefabInstanceSettings,interactionMode);
                         
