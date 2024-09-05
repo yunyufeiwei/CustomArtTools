@@ -1,0 +1,2 @@
+说明：
+Drawnormals.cs该脚本需要放在项目的Assets中,但不能放在Editor目录下，否则将无法作为Component挂载到模型上。
