@@ -1,3 +1,8 @@
+/*
+ * 基于选择的模型fbx创建预制体，并同时创建预制体变体
+ * 创建的预制体父类是一个空的GameObject，其上没有添加任何组件，尽可能的保证了父类的结构干净
+ */
+
 using UnityEditor;  
 using UnityEngine;  
 using System.IO;
@@ -30,7 +35,7 @@ namespace yuxuetian
 
         private Vector2 scroPos;
 
-        [MenuItem("ArtTools/Model/Create Prefabs and Variants")]
+        [MenuItem("ArtTools/Model/创建预制体以及变体(同时)",false,402)]
         private static void ShowWindow()
         {
             GetWindow<CreatePrefabsAndVariants>("Create Prefabs and Variants");

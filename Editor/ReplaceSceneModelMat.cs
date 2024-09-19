@@ -1,3 +1,7 @@
+/*
+ * 关卡白盒阶段，替换场景中选择物体的材质
+ */
+
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;

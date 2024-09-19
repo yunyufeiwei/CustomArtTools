@@ -1,3 +1,7 @@
+/*
+ * 该方法是直接使用模型创建预制体，该预制体是的组件直接就在父类上显示
+ */
+
 using System;
 using System.IO;
 using UnityEditor;
@@ -12,7 +16,7 @@ namespace yuxuetian
         public static string localPath = "Assets/Art/";
         private bool isFbx;
 
-        [MenuItem("ArtTools/Model/批量创建Prefabs", false, 102)]
+        [MenuItem("ArtTools/Model/创建预制体(无父类)", false, 401)]
         public static void ShowWindow()
         {
             EditorWindow window = GetWindow<CreatePrefabs>();
@@ -50,9 +54,11 @@ namespace yuxuetian
             {
                 string assetPath = AssetDatabase.GetAssetPath(obj);
 
-                if (!string.IsNullOrEmpty(assetPath) && Path.GetExtension(assetPath).ToLower() == ".fbx")
+                if (!string.IsNullOrEmpty(assetPath) && Path.GetExtension(assetPath).ToLower() == ".fbx" || Path.GetExtension(assetPath).ToLower() == ".obj")
                 {
                     isFbx = true;
+                    //打印所有选择的文件名以及文件的后缀名
+                    Debug.Log("当前选择的文件是：" + obj.name + assetPath.ToLower());
                 }
                 else
                 {

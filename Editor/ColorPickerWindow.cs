@@ -1,6 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
-namespace LcLTools
+
+namespace yuxuetian
 {
     public class ColorPickerWindow : EditorWindow
     {
@@ -21,10 +22,10 @@ namespace LcLTools
         void OnGUI()
         {
 
-            EditorGUILayout.TextField("Luminance:", _colorLuminance);
-            EditorGUILayout.TextField("Hex:", _colorHex);
-            EditorGUILayout.TextField("RGB:", _colorRGB);
-            EditorGUILayout.TextField("RGB32:", _colorRGB32);
+            EditorGUILayout.TextField("Luminance(亮度):", _colorLuminance);
+            EditorGUILayout.TextField("Hex(十六进制):", _colorHex);
+            EditorGUILayout.TextField("RGB(24位颜色):", _colorRGB);
+            EditorGUILayout.TextField("RGB32(32位颜色):", _colorRGB32);
             EditorGUILayout.TextField("HSV:", _colorHSV);
 
             Color tempColorValue = EditorGUILayout.ColorField(_color);
