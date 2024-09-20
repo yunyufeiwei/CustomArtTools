@@ -54,7 +54,7 @@ namespace yuxuetian
 
             //用于将窗口定位到鼠标当前位置附近的逻辑
             Vector2 temp = GUIUtility.GUIToScreenPoint(new Vector2(Event.current.mousePosition.x, Event.current.mousePosition.y));
-            window.position = new Rect(temp.x - totalWidth - 150, temp.y + 50, totalWidth, totalHeight);
+            window.position = new Rect(temp.x - totalWidth, temp.y + 50, totalWidth, totalHeight);
             
             window.Show();
         }

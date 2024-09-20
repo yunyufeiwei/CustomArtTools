@@ -63,6 +63,7 @@ namespace yuxuetian
             // 获取此组件的视觉元素根节点，用于添加子元素
             var root = this.rootVisualElement;
 
+            //固定窗口高度，让滑动条正常显示
             toggle = new Toggle("固定窗口");
             toggle.style.fontSize = 20;
             toggle.style.alignSelf = Align.Center;
