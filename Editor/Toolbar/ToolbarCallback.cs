@@ -57,7 +57,7 @@ namespace yuxuetian
 
                     // 尝试在工具栏的左侧区域注册自定义GUI  
                     RegisterCallback("ToolbarZoneLeftAlign", OnToolbarGUILeft);
-                    // RegisterCallback("ToolbarZoneRightAlign", OnToolbarGUIRight);
+                    RegisterCallback("ToolbarZoneRightAlign", OnToolbarGUIRight);
 
                     // 辅助方法，用于在指定区域内注册自定义GUI  
                     void RegisterCallback(string root, Action action)
