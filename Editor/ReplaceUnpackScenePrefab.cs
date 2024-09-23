@@ -10,7 +10,7 @@ namespace yuxuetian
         // 在Inspector中设置这些变量  
         public GameObject replaceGameObject;
 
-        [MenuItem("ArtTools/Model/替换场景中的prefab", false, 103)]
+        [MenuItem("ArtTools/Model/替换场景中的prefab", false, 102)]
         public static void ShowWindow()
         {
             EditorWindow window = GetWindow<ReplaceUnpackScenePrefab>();

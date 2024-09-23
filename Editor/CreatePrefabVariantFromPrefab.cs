@@ -14,7 +14,7 @@ public class CreatePrefabVariantFromPrefab : EditorWindow
     public string PrefabPath = "Assets/Temp";
     public bool isPrefab = false;
 
-    [MenuItem("ArtTools/Model/创建预制体变体" , false , 403)]  
+    [MenuItem("ArtTools/Model/创建预制体变体" , false , 122)]  
     private static void ShowWindow()  
     {  
         GetWindow<CreatePrefabVariantFromPrefab>("Create Prefab Variant From Prefab");  

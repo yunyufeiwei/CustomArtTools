@@ -12,7 +12,7 @@ namespace yuxuetian
     {
         public Material targetMaterial;
 
-        [MenuItem("ArtTools/Level/ReplaceSceneMaterial", false, 300)]
+        [MenuItem("ArtTools/Level/ReplaceSceneMaterial", false, 301)]
         public static void ShowWindow()
         {
             EditorWindow window = GetWindow<ReplaceSceneModelMat>("替换场景模型材质");

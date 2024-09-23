@@ -252,7 +252,7 @@ namespace yuxuetian
             return true;
         }
 
-        [MenuItem("ArtTools/Level/ExportTools/ExportSelectObjectToSingle",false , 71)]
+        [MenuItem("ArtTools/Level/ExportTools/ExportSelectObjectToSingle",false , 321)]
         static void ExportWholeSelectionToSingle()
         {
             if (!CreateTargetFolder())
@@ -299,7 +299,7 @@ namespace yuxuetian
             }
         }
 
-        [MenuItem("ArtTools/Level/ExportTools/ExportSelectObjectToMul", false,72)]
+        [MenuItem("ArtTools/Level/ExportTools/ExportSelectObjectToMul", false,322)]
         static void ExportEachSelectionToSingle()
         {
             if (!CreateTargetFolder())

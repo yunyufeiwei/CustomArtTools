@@ -22,7 +22,7 @@ class ExportTerrain : EditorWindow
     int totalCount;
     int progressUpdateInterval = 10000;
 
-    [MenuItem("ArtTools/Level/ExportTools/ExportSingleTerrain")]
+    [MenuItem("ArtTools/Level/ExportTools/ExportSingleTerrain",false,323)]
     static void Init()
     {
         terrain = null;
