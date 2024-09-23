@@ -47,7 +47,7 @@ namespace yuxuetian
             clearMethod.Invoke(null, null);
         }
 
-        [MenuItem("ArtTools/ShortKeys/重置Position #1" , false , 720)]
+        [MenuItem("ArtTools/ShortKeys/重置Position #1" , false , 540)]
         static void ResetPosition()
         {
             var positionArray = Selection.transforms;
@@ -59,7 +59,7 @@ namespace yuxuetian
             }
         }
         
-        [MenuItem("ArtTools/ShortKeys/重置Rotation #2",false , 721)]
+        [MenuItem("ArtTools/ShortKeys/重置Rotation #2",false , 541)]
         static void ResetRotation()
         {
             Transform[] rotationArray = Selection.transforms;
@@ -72,7 +72,7 @@ namespace yuxuetian
             }
         }
         
-        [MenuItem("ArtTools/ShortKeys/重置Scale #3",false , 722)]
+        [MenuItem("ArtTools/ShortKeys/重置Scale #3",false , 542)]
         static void ResetScale()
         {
             Transform[] scaleArray = Selection.transforms;
